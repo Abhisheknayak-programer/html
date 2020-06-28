@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BOX</title>
+</head>
+<style>
+    .boxclassholder {
+        border: 2px solid red;
+        display: flex;
+        height: 1000px;
+        /* flex-direction: column-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: row; */
+
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; */
+        /* flex-wrap: nowrap; */
+
+        /* flex-flow: column-reverse wrap; */
+        /* flex-flow: column wrap; */
+
+        /* justify-content: center; */
+        /* justify-content: start; */
+        /* justify-content:space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content:space-around ; */
+
+
+        /* align-items: center; */
+        /* align-items: baseline; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: stretch; */
+
+    }
+
+    .box {
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: monospace;
+
+    }
+
+    #box1 {
+        border: 2px solid black;
+        /* flex-grow: 10; */
+
+        /* flex-shrink:10 ; */
+
+        /* it  will grow width when direction set to row and will grow height when it is set to columns */
+
+        /* flex-basis: 320px; */
+    }
+
+    #box2 {
+        border: 2px solid gold;
+        /* order: 20; */
+
+        /* flex: 3  4 50px; */
+
+    }
+
+    #box3 {
+        border: 2px solid rebeccapurple;
+        /* order: 21; */
+    
+        /* flex: 2  3 40px; */
+    }
+
+    #box4 {
+        border: 2px solid greenyellow;
+        /* flex-grow: 11; */
+
+        /* flex-shrink: 100; */
+    }
+
+    #box5 {
+        border: 2px solid cyan;
+
+    }
+</style>
+
+<body>
+    <div class="boxclassholder">
+
+        <div class="box" id="box1">01</div>
+        <div class="box" id="box2">02</div>
+        <div class="box" id="box3">03</div>
+        <div class="box" id="box4">04</div>
+        <div class="box" id="box5">05</div>
+
+
+    </div>
+</body>
+
+</html>

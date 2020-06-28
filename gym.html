@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABHISHEK FITNESS WORLD </title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+
+    <style>
+        /* ###########################################  start header working   ################################ */
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(gym.jpg);
+            cursor: pointer;
+            color: #fff;
+            font-family: 'Faster One', cursive;
+            background-repeat: no-repeat;
+        }
+
+        /* ###########################################  left div working   ################################ */
+
+        .left {
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            padding: 10px 10px;
+
+        }
+
+        .left img {
+            width: 50px;
+            display: block;
+            border-radius: 30px;
+            margin: auto;
+        }
+
+        .left img:hover {
+            border: 2px solid yellowgreen;
+            border-radius: 0px;
+        }
+
+        .left div {
+            color: rgb(236, 200, 236);
+            padding-top: 10px;
+            font-size: 20px;
+        }
+
+
+        .left div:hover {
+            color: rgb(236, 232, 232);
+        }
+
+        /* ###########################################  right  div working   ################################ */
+
+        .right {
+            /* border: 2px solid yellow; */
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            padding: 10px 10px;
+        }
+
+        .right .btn {
+            padding: 10px 10px;
+            color: rgb(243, 0, 0);
+            background-color: #fff;
+            border-radius: 15px;
+            font-size: 15px;
+            font-family: 'Faster One', cursive;
+
+        }
+
+        .right .btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* ###########################################  middle  div working   ################################ */
+        .middle {
+            /* border: 2px solid white; */
+            /*   used for editing purposes */
+            display: block;
+            width: 1000px;
+            margin: auto;
+            border-radius: 40px;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 10px;
+        }
+
+        .middle a {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            font-size: 30px;
+        }
+
+        .list li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .list li a:hover,
+        .list li a:active {
+            text-decoration: underline;
+            background-color: rgb(240, 219, 219);
+            color: #000000;
+            border-radius: 5px;
+            padding: 10px 10px;
+
+        }
+
+
+        /* ###########################################  end header working   ################################ */
+
+        /* ###########################################  form work start here   ################################ */
+
+        .container {
+            font-family: cursive;
+            border: 2px solid white;
+            margin: 102px 23px;
+            padding: 86px 229px;
+            width: 92px;
+            border-radius: 32px;
+            color: rgb(205, 209, 202);
+            background-image: url(https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80);
+            
+        }
+
+        .container h1 {
+            display: inline-block;
+            text-align: center;
+            position: absolute;
+            top: 180px;
+            left: 44px;
+            padding: 20px 2px;
+        }
+
+        .container input {
+            padding: 17px 73px;
+            margin: 7px;
+            border-radius: 20px;
+        }
+
+        .forms {
+            margin: 10px -113px;
+        }
+
+        #hifi {
+            padding: 15px 128px;
+            margin: 7px -101px;
+            border-radius: 20px;
+            background: #000;
+            color: white;
+        }
+
+        .container input:hover {
+            border-radius: 0%;
+            font-weight: bold;
+        }
+
+
+        /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    comment box editing   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+        .commentbox {
+            border-radius: 30px;
+            border: 2px solid rgb(35, 91, 163);
+            width: 500px;
+            height: 300px;
+            position: absolute;
+            left: 500px;
+            top: 1100px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            padding-bottom: 20px;
+            background: linear-gradient(315deg, #89ff00, #00bcd4)
+        }
+
+        .sahil {
+            font-size: 20px;
+        }
+
+        textarea {
+            background-color: rgb(220, 240, 247);
+        }
+
+        #button12 button {
+            border: 2px solid black;
+            background-color: rgb(29, 28, 28);
+            color: white;
+            margin-top: 20px;
+            position: absolute;
+            left: 205px;
+            font-size: 20px;
+            font-weight: bold;
+            width: 100px;
+        }
+
+        #button12 button:hover {
+            border-radius: 20px;
+            background: linear-gradient(315deg, #74d3eb, #d44e19)
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="left">
+            <img src="data:image/jpeg;base64,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"
+                alt="loading...">
+            <div>ABHISHEK &nbsp; &nbsp; FITNESS</div>
+        </div>
+
+        <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+        <div class="middle">
+            <ul class="list">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4 -->
+        <div class="right">
+            <button class="btn">User ID </button>
+            <button class="btn">Login</button>
+            <button class="btn">Founder</button>
+        </div>
+    </header>
+
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+    <div class="container">
+        <h1>BEST GYM OF BHUBANESWAR</h1>
+        <form action="backend.mysql">
+
+            <div class="forms">
+
+                <div>
+                    <input type="text" name="1" placeholder="Enter Your Name">
+                </div>
+                <div>
+                    <input type="text" name="5" placeholder="Enter Your Age">
+                </div>
+                <div>
+                    <input type="text" name="2" placeholder="Enter Your Email">
+                </div>
+                <div>
+                    <input type="text" name="3" placeholder="Enter Your Mobile.No">
+                </div>
+                <div>
+                    <input type="text" name="4" placeholder="Enter Your Weight">
+                </div>
+
+            </div>
+
+
+
+            <div>
+                <button class="btn" id="hifi">Submit</button>
+            </div>
+
+
+
+        </form>
+    </div>
+
+
+
+
+
+
+    <!-- ###########################################      comments  code   ############################################### -->
+
+    <div class="commentbox">
+
+        <h2 class="sahil">CONTACT US</h2>
+        <p class="sahil">write your comments and reviews</p>
+
+
+        <div class="cinput">
+            <textarea name="comment_text" placeholder="write" cols="30" rows="10"></textarea>
+        </div>
+
+        <div id="button12">
+            <button>Submit</button>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

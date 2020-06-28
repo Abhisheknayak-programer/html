@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION PRACTICE</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        border: 2px solid black;
+        height: 100vh;
+    }
+
+    .rectangle {
+        border: 2px solid red;
+        list-style: none;
+        padding: 10px;
+        width: 300px;
+        background-color: greenyellow;
+        animation: abhishek 5s ease-in-out 0s 2 reverse;
+        box-shadow: 2px 2px 20px black;
+
+    }
+
+    @keyframes abhishek {
+        0% {
+            top: 0;
+            width: 0;
+
+        }
+
+        25% {
+            top: 0;
+            width: 100px;
+        }
+
+        50% {
+            top: 0;
+            width: 200px;
+
+        }
+
+        75% {
+            top: 0;
+            width: 300;
+        }
+
+    }
+
+    #rec-1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 50px;
+    }
+
+    #rec-2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 50px;
+    }
+
+    #rec-3 {
+        position: absolute;
+        left: 0;
+        top: 60px;
+        height: 50px;
+    }
+
+    #rec-4 {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        height: 50px;
+    }
+
+    #rec-5 {
+        position: absolute;
+        left: 0;
+        top: 120px;
+        height: 50px;
+    }
+
+    #rec-6 {
+        position: absolute;
+        right: 0;
+        top: 120px;
+        height: 50px;
+    }
+
+    #rec-7 {
+        position: absolute;
+        left: 0;
+        top: 180px;
+        height: 50px;
+    }
+
+    #rec-8 {
+        position: absolute;
+        right: 0;
+        top: 180px;
+        height: 50px;
+    }
+</style>
+
+<body>
+
+    <ul>
+        <li class="rectangle" id="rec-1">ONE</li>
+        <li class="rectangle" id="rec-2">TWO</li>
+        <li class="rectangle" id="rec-3">THREE</li>
+        <li class="rectangle" id="rec-4">FOUR</li>
+        <li class="rectangle" id="rec-5">FIVE</li>
+        <li class="rectangle" id="rec-6">SIX</li>
+        <li class="rectangle" id="rec-7">SEVEN</li>
+        <li class="rectangle" id="rec-8">EIGHT</li>
+    </ul>
+
+</body>
+
+</html>

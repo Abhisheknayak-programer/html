@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTRIBUTES</title>
+</head>
+    <style>
+        .hi{
+            display: flex;
+        }
+
+
+        input[type="number"]{
+            background-color: lightcyan;
+        }
+
+        
+        input[type="date"]{
+            background-color: lightcyan;
+            font-size: 30px;
+            color: blue;
+        }
+
+        a[target="_blank"]{
+            background-color: lightgreen;
+        }
+
+        
+        a[target="_self"]{
+            background-color: rgb(225, 156, 228);
+            color: white;
+            font-size: 30px;
+        }
+
+    </style>
+<body>
+    <header >
+        <form action="backend.mysql" >
+            NAME:<input type="text" class="hi">
+            PASSWORD:<input type="password" class="hi">
+            ID:<input type="number" class="hi">
+            DATE:<input type="date" class="hi">
+        </form>
+
+        <a href="#" target="_self">google</a>
+        <a href="#" target="_blank">facebook</a>
+    </header>
+</body>
+</html>

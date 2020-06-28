@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION IN CSS</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        height: 200px;
+        border: 2px solid black;
+        background:  rgb(103, 253, 103);
+    }
+    .box{
+        font-size: 40px;
+        display: flex;
+        position: relative;
+        border: 2px solid red;
+        background-color: salmon;
+        width: 200px;
+        height: 200px;
+        animation-name:adarsh;
+        animation-duration: 2s;
+        animation-iteration-count:100 ;
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: alternate; */
+        /* animation-timing-function: ease-in; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-timing-function: ease-out; */
+        /* animation-delay: 10s; */
+        /* animation-direction: alternate; */
+        /* animation-direction: reverse; */
+    }
+
+
+/* 
+
+    @keyframes adarsh{
+        from{
+            width: 100px;
+        }
+        to{
+            width: 1300px;
+        }
+    } */
+
+
+
+    @keyframes adarsh{
+        0%{
+            top: 0;
+            left: 0;
+        }
+        25%{
+            top: 200px;
+            left: 0;
+        }
+        50%{
+            top: 200px;
+            left: 200px;
+        }
+        75%{
+            top: 0;
+            left: 200px;
+        }
+    }
+
+
+    
+</style>
+<body>
+    <header class="header">
+        <div class="box">
+            01
+        </div>
+    </header>
+</body>
+
+</html>

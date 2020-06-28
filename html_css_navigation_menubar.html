@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- menu bar css -->
+<style>
+    .mainmenu {
+        background-color: black;
+        /* width: 1000px; */
+        /* margin: auto; */
+        border-radius: 30px;
+        /* color: blanchedalmond; */
+
+    }
+
+    .mainmenu ul {
+
+        overflow: auto;
+    }
+
+    .mainmenu li {
+        float: left;
+        list-style: none;
+        margin: 13px 20px;
+        padding: 3px 30px;
+
+    }
+
+    .mainmenu a {
+        text-decoration: none;
+        color: white;
+        padding: 3px 3px;
+
+    }
+
+    .searchbox {
+        float: right;
+        color: white;
+        padding: 3px 22px;
+
+    }
+
+    .mainmenu input {
+        border: 2px solid black;
+        padding: 3px 14px;
+        width: 120px;
+    }
+
+    .mainmenu ul li a:hover {
+
+        background-color: red;
+    }
+
+    .searchbox input:hover {
+        color: darkblue;
+        background-color: rgb(223, 223, 223);
+
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="mainmenu">
+            <ul>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">POLICY</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <div class="searchbox"><input type="text" name="my_search" placeholder="SEARCH">SEARCH ANYTHING</div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

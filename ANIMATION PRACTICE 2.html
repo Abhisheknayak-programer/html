@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION PRACTICE 2</title>
+</head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+    color: white;
+    background: black;
+}
+.container{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    padding: 20px;
+    background: lightcyan;
+    color: red;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 2px 2px 20px white;
+    animation: abhishek 2s ease-in-out 0s 1 forwards;
+    }
+    .container:hover{
+    animation: abhishek2 2s ease-in-out 0s 1 forwards;
+    }
+
+
+    @keyframes abhishek{
+        from{
+            width: 0px;
+            top: 0px;
+        }
+        to{
+            width: 600px;
+            top: 260px;
+        }
+    }
+
+
+    @keyframes abhishek2{
+        from{
+            width: 600px;
+            top: 260px;
+        }
+        to{
+            width: 0px;
+            top: 0px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="content"><h1>CODING</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt excepturi necessitatibus provident commodi expedita vel labore, non distinctio dolore nesciunt. Vero magni ipsum eligendi culpa hic officiis illo magnam aliquam, mollitia dolore velit nemo.</p>
+        </div>
+    </div>
+</body>
+</html>

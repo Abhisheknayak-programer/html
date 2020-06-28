@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSITION</title>
+</head>
+<style>
+    body{
+        background-image: url(code.jpg);
+       
+    }
+    #box{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        height: 200px;
+        width: 200px;
+        background-color: rgb(8, 8, 8);
+       transition-property: background-color;
+       color :white;
+       margin: auto;
+    }
+    #box:hover{
+        /* background-color: rgb(202, 198, 198); */
+        /* color: green; */
+        /* transition-duration: 3s; */
+        /* transition-delay: 0s; */
+        /* transition-timing-function: ease-in-out; */
+        /* transition-timing-function: ease-out; */
+        /* transition: background-color 1.6s ease-in-out 0.1s ; */
+        transition:all 2s ease-in-out 0.1s;
+        height: 400px ;
+        width: 400px;
+        font-size: 30px;
+        border-radius: 200px;
+        background:linear-gradient(315deg,#e91e63,#5d02ff);
+        /* border: 2px solid linear-gradient(315deg,#89ff00,#00bcd4); */
+        color:white;
+        /* opacity: 0.7; */
+        
+    }
+
+</style>
+<body>
+    <h1>  THIS IS CSS TRANSFORM TUTORIAL  </h1>
+    <div class="container">
+        <div id="box">
+            ABHISHEK NAYAK 
+        </div>
+    </div>
+</body>
+</html>

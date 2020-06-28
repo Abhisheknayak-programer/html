@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX SHADOW AND TEXT SHADOW</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Playfair Display', serif;
+        height: 100%;
+        width: 100%;
+    }
+
+    .allrounder {
+        display: flex;
+        border: 2px solid black;
+        padding: 100px 10px;
+    }
+
+    .card {
+        margin: 10px 10px;
+        border: 2px solid red;
+        padding: 20px 20px;
+        background-color: lightcyan;
+        box-shadow: inset -10px 10px 100px black;
+        text-shadow: 2px 2px 2px white;
+    }
+
+
+    #card-1 {
+        /* box-shadow: -10px -10px 10px 10px black ; */
+
+    }
+
+    #card-2 {
+
+        /* box-shadow: -10px -13px rgb(241, 11, 11); */
+
+        /* box-shadow: inset 10px 10px 10px blueviolet; */
+
+    }
+
+    #card-3 {
+        /* box-shadow: 10px 10px 10px black; */
+    }
+
+    #card-4 {
+        /* box-shadow: 10px 13px gold; */
+
+        /* box-shadow: inset -10px 10px 100px black; */
+    }
+</style>
+
+<body>
+    <header class="allrounder">
+
+        <div class="card" id="card-1">
+            <h1>card-1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis repellendus rerum cupiditate quis
+                sint maxime, iusto quasi impedit dolorum voluptatibus eos. Commodi repellat delectus asperiores
+                quibusdam nam tempore cupiditate non magnam facilis!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>card-2</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, cum nobis illum distinctio quos, facere
+                sunt sit perferendis nemo earum molestias officia quis nisi delectus, praesentium consequatur aliquam
+                aliquid temporibus laborum tempora accusantium!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>card-3</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet ut, eius esse ad eaque sit
+                voluptas aliquid suscipit explicabo delectus perspiciatis saepe, aperiam quasi provident! Quia officiis
+                esse repudiandae dolorem optio ducimus eaque!
+            </p>
+        </div>
+        <div class="card" id="card-4">
+            <h1>card-4</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ullam tenetur amet culpa molestias
+            voluptates alias minus quo. Quas, vel facere consectetur unde consequuntur magni, eos deleniti non quaerat
+            necessitatibus reiciendis dolorem ducimus est asperiores.
+        </div>
+    </header>
+</body>
+
+</html>

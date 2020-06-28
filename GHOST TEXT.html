@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABHISHEK</title>
+</head>
+<style>
+    body{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #000000;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    ul li{
+        list-style: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 6em;
+        letter-spacing: 10px;
+        filter: blur(1px);
+        transform: 4s;
+    }
+    ul li:hover,
+    ul li:hover ~li
+    {
+        transform: rotate(360deg) translateY(-200px);
+        transition: 2s;
+        filter: blur(20px);
+        opacity: 0;
+    }
+</style>
+<body>
+    <ul>
+        <li>K</li>
+        <li>A</li>
+        <li>Y</li>
+        <li>A</li>
+        <li>N</li>
+        <li>_</li>
+        <li>K</li>
+        <li>E</li>
+        <li>H</li>
+        <li>S</li>
+        <li>I</li>
+        <li>H</li>
+        <li>B</li>
+        <li>A</li>
+    </ul>
+</body>
+</html>
