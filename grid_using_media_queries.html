@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA QUERIES IN GRID</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                "navbar navbar navbar navbar"
+                "section section section aside"
+                "footer footer footer footer ";
+        }
+
+
+
+
+        @media only screen and (max-width: 500px) {
+
+            body {
+                background-color: red;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+            aside{
+                display: none;
+            }
+        }
+
+
+
+
+
+
+        @media only screen and (min-width: 500px) and (max-width: 799px) {
+
+            body {
+                background-color: rgb(0, 255, 98);
+
+            }
+
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar navbar"
+                    "section section section section"
+                    "aside aside aside aside"
+                    "footer footer footer footer ";
+            }
+
+            span {
+                display: block;
+            }
+
+            nav {
+                text-align: center;
+            }
+        }
+
+
+
+
+
+        @media only screen and (min-width: 800px) and (max-width: 1100px) {
+
+            body {
+                background-color: rgba(68, 70, 201, 0.363);
+            }
+
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar navbar"
+                    "section section section section"
+                    "aside aside aside aside"
+                    "footer footer footer footer ";
+            }
+
+        }
+
+
+
+
+
+
+
+        @media only screen and (min-width: 1100px) {
+            body {
+                background-color: rgba(141, 26, 170, 0.219);
+
+            }
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 23px;
+            background-color: wheat;
+        }
+
+
+        nav {
+            grid-area: navbar;
+            padding-left: 600px;
+        }
+
+        section {
+            grid-area: section;
+
+        }
+
+        aside {
+            grid-area: aside;
+            height: 100px;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>HOME</span>
+            <span>SERVICES</span>
+            <span>CONTACT</span>
+            <span>ABOUT US</span>
+        </nav>
+        <section class="bdr">
+            <h2>
+                learn css in hindi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eos a odit temporibus ipsum eveniet nulla laboriosam asperiores dignissimos eligendi! Temporibus ea recusandae praesentium consequatur debitis rem hic officiis, ex fugiat vel autem incidunt culpa quibusdam id, deserunt tenetur, expedita quo! Nulla, quis maxime ex, iure harum molestias ipsam soluta sint itaque in delectus earum corrupti explicabo optio pariatur a. Quas, dolore expedita, corrupti placeat doloribus quo, nostrum fuga quos a laboriosam odio blanditiis pariatur est quasi architecto libero. Voluptatum nam quisquam, corporis rem eveniet harum laborum modi. Fugit quidem corporis doloremque assumenda magnam praesentium, quae vel rerum rem pariatur odio reprehenderit iusto esse eius eligendi tempora. Repellendus explicabo, minima rerum totam voluptas maiores error a eum omnis dolorum accusantium quidem molestiae. Incidunt voluptate, laborum dolorum voluptatem alias, optio repellat corrupti sint vitae deleniti temporibus impedit et accusantium saepe. Atque animi magnam est ab, sed quia distinctio nisi aperiam rem rerum omnis excepturi ea, laboriosam ullam. Exercitationem atque esse consequuntur laboriosam, ipsam omnis porro? Temporibus, modi molestiae dignissimos rerum architecto expedita veritatis sed voluptates beatae at doloribus dolor, repudiandae quae vel, sequi eaque quasi aliquid officiis aut? Placeat perferendis nisi earum dolores neque officiis quia aut sit laborum. Blanditiis placeat beatae illum deleniti velit, quibusdam neque quaerat, minus doloribus tenetur dolor a fugit adipisci ut ipsum. Id suscipit omnis nisi quaerat modi veniam dignissimos nesciunt magni sed quia doloremque repudiandae aliquid culpa quas consectetur itaque, voluptatibus dolores minus at! Distinctio animi iusto ullam. Tempora illo mollitia ducimus deserunt! Maxime quod quisquam ex voluptas! Veniam laudantium deserunt assumenda corrupti adipisci provident necessitatibus rem ab iste quia omnis possimus vel aperiam ad, amet illo tempora recusandae temporibus ut dignissimos qui odit porro maxime ratione! Laborum tempore magni similique ex, reiciendis sunt ipsum obcaecati officiis ullam praesentium, ad illo voluptatum perspiciatis amet facilis.
+            </h2>
+        </section>
+        <aside class="bdr">
+            <h2>
+                more about us
+            </h2>
+        </aside>
+        <footer class="bdr">
+            <p>Copyright &copy; Abhishek Nayak All Rights Reserved! </p>
+        </footer>
+    </div>
+</body>
+
+</html>

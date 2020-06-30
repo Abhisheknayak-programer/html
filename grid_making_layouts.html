@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKING LAYOUTS USING GRID</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap:2rem ;
+        grid-template-areas:
+        "navbar navbar navbar navbar"
+        "section section section aside"
+        "footer footer footer footer";
+     
+     }
+    .items{
+        border: 2px solid black;
+        background: rgba(248, 189, 189, 0.623);
+        padding: 10px;
+    }
+    
+#navbar{
+    grid-area:navbar ;
+    padding-left: 600px;
+}
+#section{
+    grid-area:section ;
+
+}
+#aside{
+    grid-area:aside;
+    height: 100px;
+}
+#footer{
+    grid-area:footer ;
+
+}
+</style>
+<body>
+    <div class="container">
+
+
+    <div id="navbar" class="items">HOME ABOUT CONTACT US</div>
+
+
+    <div id="section" class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, excepturi, repudiandae molestias sunt voluptates non minima sequi hic natus possimus aperiam ea pariatur error repellat fugiat beatae quibusdam, eius temporibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse commodi molestiae labore natus ullam, beatae magnam recusandae, reiciendis quas, dolor dignissimos quibusdam aliquid quasi mollitia amet quam harum. Cupiditate asperiores quam natus suscipit possimus maxime. Possimus perspiciatis libero itaque beatae. Minima excepturi eum tempore dolores blanditiis possimus quos dolorum a quae, distinctio modi. Cupiditate maxime similique sunt, molestias facilis sed excepturi temporibus perspiciatis ipsa aliquam optio expedita molestiae rerum corporis tenetur dolor iusto quibusdam quisquam laudantium. Sequi est fugiat eum, ex omnis odit impedit architecto officiis similique reiciendis ea optio quis fuga excepturi, iusto suscipit magnam molestias distinctio pariatur quas sit quo dicta et! Nemo odio autem, soluta repellendus doloribus quos quis cum architecto repellat quas neque eius corrupti nulla tempora harum numquam dignissimos. Iste officia suscipit provident excepturi, nobis, minima odio impedit quo fugiat a veritatis iusto animi minus corporis voluptatem id optio voluptas ex nostrum exercitationem fuga molestias? Commodi molestiae dolorum alias totam aperiam ducimus nam corporis! Qui reprehenderit eaque numquam provident commodi vel alias fuga a architecto. Maxime modi esse cupiditate sapiente cum quas repudiandae consequatur veniam quasi commodi architecto, optio ipsam id corrupti! Sed commodi consequuntur fuga, ipsa non maxime explicabo facere consectetur natus suscipit. Atque deserunt nesciunt eos, asperiores dolorum hic labore vel. Beatae cumque ipsum dolorem doloremque harum porro nobis. Doloribus voluptas culpa ducimus error nobis accusamus vero beatae aut, quibusdam sit cumque, in totam architecto non inventore! Vel accusantium, nisi libero nulla, incidunt numquam voluptas beatae, distinctio obcaecati nesciunt enim ab. Hic provident soluta, eveniet, maxime vel porro nobis adipisci voluptatem reiciendis dicta quasi ea ipsa pariatur eaque qui est neque voluptas saepe sapiente praesentium? Cum sit, aut obcaecati totam qui numquam rerum, voluptate magnam ipsam id error ea architecto pariatur deserunt exercitationem iusto. In dolorem ab similique adipisci iure corrupti id itaque. .</div>
+
+
+    <div id="aside" class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam minima ut reiciendis.</div>
+
+    <div id="footer" class="items">Copyright &copy; Abhishek Nayak All Rights Reserved!</div>
+</div>
+</body>
+</html>
