@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Ubuntu', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+@media only screen and (min-width:1000px){
+    .MyLogo{
+        width: 50%;
+        text-align: center;
+    }
+    .SignUp{
+        height: 80vh;
+    }
+}
+
+
+
+nav{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+/* Sign Up Css Starts Here */
+.SignUp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUpContents form input{
+    width: 70%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #868686 ;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.SignUpCheckBox  label {
+    border: 2px solid red;
+}   
+
+
+.SignUpContents form input:hover::placeholder{
+    font-weight: 400;
+    color: black;
+}
+
+.SignUpContents form div:hover i{
+    color: rgb(0, 221, 0);
+    font-size: large;
+}
+
+
+
+.SignUpImg{
+    display: flex;
+    justify-content: center;
+
+}
+
+.SignUpLastLInk{
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.SignUpLastLInk:hover{
+    color: red;
+}
+
+
+
+
+
+
+/*Main Header Work*/
+
+.main_header{
+    
+    /* background: url("https://www.thoughtco.com/thmb/Zya6PS3m6XjRAmVo1HONvY9DW_A=/3865x2174/smart/filters:no_upscale()/abstract-paper-flower-pattern-656688606-5acfba2eae9ab80038461ca0.jpg") center center/cover; */
+    
+    background: url("../images/MainImg/headerImg.jpg") center center/cover;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+.Main_Header_Content h1{
+    color: white;
+    font-size: 4rem;
+    z-index: 1;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+
+.HeaderButtons{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.FirstRow .HeaderImg img{
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.FirstRow .HeaderImg img:hover{
+    box-shadow:2px 2px 10px rgba(255,255,255,1),2px 2px 10px rgba(255,255,255,1);
+}
+
+
+
+.Header_Second_Row_Heading{
+    text-align: center;
+    text-decoration: underline;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    font-weight: 600;
+}
+
+
+
+
+
+
+/* About Section Design */
+.secondSection{
+    background-color: rgb(0, 0, 0);
+    /* background-color: #fff; */
+}
+
+.secondSection p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.secondSection h1{
+    font-family: 'Ubuntu', sans-serif;
+}
+ 
+
+.secondSection .AboutImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondSection .AboutImage img{
+    transition: all 0.4s ease;
+}
+
+.secondSection:hover .AboutImage img{
+    filter: drop-shadow(5px 5px 3px #e802fd);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Wave Section Editing */
+.waveMain_section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.waveMain_section .wave{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#295afa;
+}
+
+.waveMain_section .wave span{
+    position: absolute;
+    width: 325vh;
+    height: 325vh;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-75%);
+    background:#000;
+
+}
+
+.waveMain_section .wave span:nth-child(1){
+    animation: animate 5s linear infinite;
+    border-radius: 45%;
+    background: rgba(20,20,20,1);
+}
+
+
+
+.waveMain_section .wave span:nth-child(2){
+    animation: animate 10s linear infinite;
+    border-radius: 40%;
+    background: rgba(20,20,20,0.5);
+}
+
+
+.waveMain_section .wave span:nth-child(3){
+    animation: animate 15s linear infinite;
+    border-radius: 42.5%;
+    background: rgba(20,20,20,0.5);
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%,-75%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-75%) rotate(360deg);
+    }
+}
+
+.waveMain_section .Mycontent{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    /* font-size: 4em; */
+}
+
+
+
+
+
+
+
+
+
+/* Our Team Area Styling*/
+.teamArea{
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    background:#000;
+}
+
+.teamArea .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.teamArea .TeamCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.teamArea .TeamCard .imgHolder{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.teamArea .TeamCard:nth-child(1) .imgHolder{
+
+    background: url("https://thumbs.dreamstime.com/b/portrait-young-man-beard-hair-style-male-avatar-vector-portrait-young-man-beard-hair-style-male-avatar-105082137.jpg") center center/cover;
+}
+
+.teamArea .TeamCard:nth-child(2) .imgHolder{
+    background: url("https://cdn1.iconfinder.com/data/icons/diversity-avatars-volume-01-circles/64/hipster-beard-man-white-512.png") center center/cover;
+}
+
+
+.teamArea .TeamCard:nth-child(3) .imgHolder{
+    background: url("https://i2.wp.com/nofiredrills.com/wp-content/uploads/2016/10/myavatar.png?fit=400%2C400&ssl=1") center center/cover;
+}
+
+.teamArea .TeamCard{
+    border: 1px solid #eee;
+    border-radius: 10px;
+    color: white;
+    margin: 30px 0px;
+    transition: all 0.5s ease;
+}
+.teamArea .TeamCard:hover{
+    box-shadow: 3.91px 3.91px 10px #C9C9C9, -3.91px -3.91px 10px #FFFFFF;
+}
+
+
+.teamArea .TeamCard h1{
+    padding: 5px;
+}
+
+.teamArea .TeamCard p{
+    text-align: center;
+    padding: 10px;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width:992px){
+    .FirstRow .col{
+        margin-top:20px;
+    }
+}
+
+
+
+@media only screen and (max-width:768px){
+    .SignUpContents form input{
+        width: 90%;
+    }
+
+    .SignUpContents h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-width:576px){
+    .SignUp .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .SignUp .row .col{
+        margin: 40px 0px;
+    }
+    .SignUpContents h1{
+        font-size: 2.5rem;
+    }
+
+    /* Index Page */
+    .Main_Header_Content h1{
+        font-size: 3rem;
+    }
+
+    .HeaderButtons{
+        width: 100%;
+    }
+
+    .FirstRow,.secondSection .row,.teamArea .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    /* About Section */
+    .secondSection .row .AboutContent{
+        margin-top: 30px;
+    }
+
+    /* Team Cards */
+    .teamArea .row{
+        margin: 0px 20px;
+    }
+
+}
+
+
+
+@media only screen and (max-width:420px){
+    /* Index Page */
+    .Main_Header_Content h1{
+        font-size: 2.5rem;
+    }
+    
+    .HeaderButtons a{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+@media only screen and (max-width:360px){
+    .SignUpContents h1{
+        font-size: 2rem;
+    }
+    
+    /* Index Page */
+    .Main_Header_Content h1{
+        font-size: 2rem;
+    }
+   
+}
+
+
+
+
+@media only screen and (max-width:275px){
+   
+    .teamArea{
+        font-size: 10px;
+    }  
+    .teamArea h1{
+        font-size: 20px;
+    }
+        .teamArea .TeamCard h1{
+        font-size: 14px;
+    }
+
+}

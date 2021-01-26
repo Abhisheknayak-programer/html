@@ -1,0 +1,86 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARTOW SIGN-UP</title>
+<!-- Bootstarp CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!-- Favicon -->
+<!-- <link rel="shortcut icon" href="./images/Main Img/FAVICON.png" type="image/x-icon"> -->
+<link rel="shortcut icon"
+    href="https://images.pexels.com/photos/1964471/pexels-photo-1964471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    type="image/x-icon">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<!-- Css Links From Public/css -->
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <section class="SignUp">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-6 col-md-6 col-sm-12 SignUpContents">
+                    <h1>Sign Up</h1><br>
+
+                    <form action="/" method="POST">
+                        <div>
+                            <i class="fa fa-user" aria-hidden="true"></i>   <input type="text" name="name"
+                                placeholder="Enter Your Name" required autocomplete="none">
+                        </div>
+                        <br>
+
+                        <div>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>   <input type="text" name="email"
+                                placeholder="Enter Your Email" required autocomplete="none">
+                        </div>
+                        <br>
+                        
+
+                         <div>
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>   <input type="number" name="mobile"
+                                placeholder="Enter Your Mobile Number" required autocomplete="none">
+                        </div>
+                        <br>
+
+
+                        <div>
+                            <i class="fa fa-lock" aria-hidden="true"></i>   <input type="password" name="password"
+                                placeholder="Password" required>
+                        </div>
+                        <br>
+                        
+                        <div>
+                            <i class="fa fa-get-pocket" aria-hidden="true"></i>  <input type="password" name="cpassword"
+                                placeholder="Confirm Password" required>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-outline-primary">Sign Up</button> 
+                    </form>
+
+                    <br>
+                    <a href="/login" class="SignUpLastLInk">Already A Member</a>
+
+                </div>
+
+                <div class="col col-lg-6 col-md-6 col-sm-12 SignUpImg">
+                    <img src="./images/SignUp/sign-up-img-2.svg" class="img-fluid" alt="CAt_svg">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Bootstarp JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
