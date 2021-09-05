@@ -295,13 +295,13 @@ header nav ul li a {
 /*********************/
 .dropDown {
   background-color: #fff;
-  padding: 2rem 4rem;
+  padding: 2rem 15rem;
   display: flex;
   justify-content: space-evenly;
 }
 .dropDown .dropDown__INNER {
   border-right: 3px solid rgb(3, 40, 145);
-  padding: 0 10rem 0 0;
+  padding: 0 14rem 0 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
